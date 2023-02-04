@@ -1,47 +1,43 @@
-# TypeScript Next.js example
+# gpt3-english-mandarin-translation-nextjs
 
-This is a really simple project that shows the usage of Next.js with TypeScript.
+This is a demo of using OpenAI's GPT-3 API to translate English to Mandarin or Mandarin to English.
 
-## Deploy your own
+## How to use
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-typescript)
+1. Clone this repo
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript&project-name=with-typescript&repository-name=with-typescript)
-
-## How to use it?
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+2. Install dependencies
 
 ```bash
-npx create-next-app --example with-typescript with-typescript-app
+npm install
+# or
+yarn
 ```
+
+3. Create a `.env` file in the root directory and add your OpenAI API key
+
+4. Run the development server
 
 ```bash
-yarn create next-app --example with-typescript with-typescript-app
+npm run dev
+# or
+yarn dev
 ```
 
-```bash
-pnpm create next-app --example with-typescript with-typescript-app
-```
+5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Deploy on Vercel
 
-## Notes
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-This example shows how to integrate the TypeScript type system into Next.js. Since TypeScript is supported out of the box with Next.js, all we have to do is to install TypeScript.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-```
-npm install --save-dev typescript
-```
+## Learn More
 
-To enable TypeScript's features, we install the type declarations for React and Node.
+To learn more about Next.js, take a look at the following resources:
 
-```
-npm install --save-dev @types/react @types/react-dom @types/node
-```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [GPT-3 API](https://beta.openai.com/docs/api-reference/introduction) - learn about OpenAI's GPT-3 API.
 
-When we run `next dev` the next time, Next.js will start looking for any `.ts` or `.tsx` files in our project and builds it. It even automatically creates a `tsconfig.json` file for our project with the recommended settings.
-
-Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
-
-A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
+Inspired by repo [Twitterbio.com](https://github.com/Nutlope/twitterbio)
