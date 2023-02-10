@@ -140,9 +140,20 @@ const Chat = () => {
         <textarea
           value={text}
           onChange={(e) => setText(e.target.value)}
+          // 按下 command/control + enter 送出
+          onKeyDown={(e) => {
+            if (e.key === "Enter" && e.metaKey) {
+              translate(e);
+            }
+          }}
           className="w-full h-24 p-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-600"
           placeholder="Type text here..."
         ></textarea>
+        <div>
+          <span className="text-sm text-gray-500">
+            Command/Control + Enter to send; {text.length}/300 characters
+          </span>
+        </div>
         <div className="flex justify-between mt-2">
           <button
             className="px-4 py-2 bg-blue-600 text-white rounded-lg"
