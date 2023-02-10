@@ -1,4 +1,4 @@
-# [gpt3-english-mandarin-translation-nextjs](https://gpt3-english-mandarin-translation-nextjs-fs9d.vercel.app/)
+# [gpt3-english-mandarin-translation-nextjs](https://gpt3-english-mandarin-translation-nextjs-ev5whg1y7-mis101247.vercel.app/)
 
 This is a demo of using OpenAI's GPT-3 API to translate English to Mandarin or Mandarin to English.
 
